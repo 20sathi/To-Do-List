@@ -1,0 +1,97 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: url(wp8979263-4k-laptop-black-wallpapers.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent;
+    border:2px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(241, 234, 234, 0.1);
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #cccccc;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(246, 235, 235);
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 10px;
+    outline: none;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    font-size: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(162, 155, 155);
+    transition: smooth;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    /* padding: 100px; */
+}
+
+li.complete {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+li button {
+    background: none;
+    color: #ccc6c6;
+    cursor: pointer;
+}
+
+li button:hover {
+    color: #fffdfd;
+}
